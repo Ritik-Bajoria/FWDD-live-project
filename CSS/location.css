@@ -1,0 +1,122 @@
+#heading{
+	z-index:2;
+}
+h1{
+	margin-left: 14vw;
+	margin-top: 2vw;
+	margin-bottom: 1vw;
+}
+.location-container {
+	display: flex;
+	width:100%;
+	justify-content: space-evenly;    
+	flex-wrap: wrap;
+	gap:90px;
+}
+.location {
+	background-color: #ffffff;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 70vw;
+	height:180px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+	padding: 32px;
+	overflow: hidden;
+	border-radius: 10px;
+	transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.content {
+	z-index: 1;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	gap: 20px;
+	transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+@media (max-width:800px){
+	.content{    
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.location{
+	height: auto;
+}
+}
+.content .image{
+	z-index: 1;
+	height:175px;
+	width:190px;
+	border-radius:5px;
+	border:1px solid #212121;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.details{
+	display:flex;
+	flex-direction: column;
+	align-items: flex-start;
+
+}
+.place {
+	margin-left: 0;
+	font-weight: 700;
+	font-size: 32px;
+	float:left;
+}
+.content .details .para {
+	line-height: 1.5;
+}
+.content .details .btn {
+	color: #e8e8e8;
+	text-decoration: none;
+	padding: 10px;
+	font-weight: 600;
+	border: none;
+	cursor: pointer;
+	background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+	border-radius: 5px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.details>a{
+	text-decoration: none;
+}
+.location::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 5px;
+	background: linear-gradient(79deg, #ffe338 17%, #ff0000 46%);
+	transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+.location:hover::before {
+	height: 100%;
+}
+.location:hover {
+	box-shadow: none;
+	color:#e8e8e8;
+}
+.location:hover .btn {
+	color: #212121;
+	background: #e8e8e8;
+}
+.content .btn:hover {
+	outline: 2px solid #e8e8e8;
+	background: transparent;
+	color: #e8e8e8;
+}
+.content .btn:active {
+	box-shadow: none;
+}
+
+.maps{
+    width: 100%;
+    height: 35%;
+}

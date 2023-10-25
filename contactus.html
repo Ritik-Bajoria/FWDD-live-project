@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact Us</title>
+	<link rel="icon" href="./Pictures/Logo.png">
+
+	<!-- Link to the external css file -->
+	<link rel="stylesheet" href="./CSS/stylewireframe.css">
+	<link rel="stylesheet" href="./CSS/contactus.css">
+
+	<!-- Link to our javascript file-->
+	<script src="./JavaScript/header-footer.js"></script>
+
+</head>
+<body>
+
+	<!-- Header section of the website -->
+	<website-header></website-header>
+
+	<div class="body">
+		<div class="container">
+			<div class="contact-form">
+				<span class="heading">Contact Us</span>
+				<form id="contact-us">
+					<label for="name">Name:</label>
+					<input type="text" id="name" required="">
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" required="">
+					<label for="message">Message:</label>
+					<textarea id="message" name="message" required=""></textarea>
+					<button type="submit">Submit</button>
+				</form>
+			</div>
+		</div>
+
+		<div class="extra_information">
+			<p>Open Hours</p>
+			<table class="styled-table">
+				<thead>
+					<tr>
+						<th>Days</th>
+						<th>Hours</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Sunday</td>
+						<td>8 AM - 7 PM</td>
+					</tr>
+					<tr class="active-row">
+						<td>Monday</td>
+						<td>8 AM - 6 PM</td>
+					</tr>
+					<tr>
+						<td>Tuesday</td>
+						<td>8 AM - 6 PM</td>
+					</tr>
+					<tr class="active-row">
+						<td>Wednesday</td>
+						<td>8 AM - 6 PM</td>
+					</tr>
+					<tr>
+						<td>Thursday</td>
+						<td>8 AM - 6 PM</td>
+					</tr>
+					<tr class="active-row">
+						<td>Friday</td>
+						<td>8 AM - 6 PM</td>
+					</tr>
+					<tr class="active-row">
+						<td>Saturday</td>
+						<td>8 AM - 6 PM</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="box-container">
+	<div class="box">
+			<img class="icon" src="./Pictures/telephone.png">
+		<div class="text">
+			<h3>Phone</h3>
+			<p>01-4433314, 9809424444</p>
+		</div>
+	</div>
+	<div class="box">
+			<img class="icon" src="./Pictures/location.png">
+		<div class="text">
+			<h3>location</h3>
+			<p>Sukrapath, New Road</p>
+		</div>
+	</div>
+
+	<div class="box">
+			<img class="icon" src="./Pictures/mail.png">
+		<div class="text">
+			<h3>Email</h3>
+			<p>tiptop@gmail.com</p>
+		</div>
+	</div>
+
+</div>
+	<!-- Footer section of the website -->
+	<website-footer></website-footer>
+	<!-- link to javascript -->
+	<script type="text/javascript" src="./JavaScript/counter.js"></script>
+	<script src="./JavaScript/contactus.js"></script>
+	<script src="./JavaScript/hamburger-menu.js"></script>
+</body>
+</html>

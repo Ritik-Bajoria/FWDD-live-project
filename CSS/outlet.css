@@ -1,0 +1,161 @@
+.home-image{
+	position:relative;
+}
+.home-image>img{
+    position: inherit;
+    margin-top: -63px;
+    z-index: -1;
+    width: 100%;
+}
+h1{
+	margin: 10px 20px;
+}
+.location{
+	display:flex;
+	margin: -5px 16px;
+}
+.location img{
+	height:18px;
+}
+.location p{
+	margin:0;
+}
+
+.form-container{
+	display:flex;
+	justify-content: space-around;
+	width:100%;
+	flex-wrap: wrap;
+}
+form{
+	margin:20px;
+	position: relative;
+	display:flex;
+	border:2px solid lightcoral;
+	border-radius: 15px;
+	background-color: #ffffff;
+	width:540px;
+	height:825px;
+    flex-direction: column;
+}
+.watermark{
+    width: 43%;
+    left: 31%;
+    position: absolute;
+    font-size: 48pt;
+    color: #c8a97e;
+    font-family: "Great Vibes", cursive;
+}
+.form-heading{
+    display: flex;
+    height: 177px;
+    width: 100%;
+    font-size: 26pt;
+    font-weight: 900;
+    align-content: center;
+    font-family: "Poppins", Arial, sans-serif;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.form-group{
+	display:flex;
+	flex-wrap: wrap;
+}
+.form-item{
+	width:100%;
+}
+.form-item label{
+    display: block;
+    font-size: 15pt;
+    font-family: "Poppins", Arial, sans-serif;
+    margin-left:20px;
+    font-weight:bold;
+}
+.form-item input{
+	margin:5px 20px;
+	height:50px;
+	width:85%;
+	font-size: 13pt;
+	padding:0px 10px;
+}
+.form-submit{
+	width:100%;
+}
+.form-submit input{	
+	background: #c8a97e;
+	border: 1px solid #b7986d;
+	height:50px;
+	width:90%;
+	margin:20px;
+	color: #fff;
+	border-radius: 10px;
+}
+.selection{
+	margin:5px 20px;
+	height:50px;
+	width:89%;
+	font-size: 13pt;
+	padding:0px 10px;
+}
+.maps{
+    min-width: 380px;
+    width: 40vw;
+	height: 500px;
+}
+.find-us{
+	margin:20px;
+}
+.find-us p{  
+	margin:5px;
+    font-size: 25pt;
+    color: #111111;
+    font-family: "Great Vibes", cursive;
+
+}
+.visit{
+	text-align: center;
+    font-size: 48pt;
+    color: #8b6632;
+    font-family: "Great Vibes", cursive;
+}
+.counter-container{
+	row-gap: 20px;
+	   padding: 30px 0;
+	background-color: #ffd395bd;
+	width:100%;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-evenly;
+}
+.counter{
+    padding: 7px;
+    margin: 5px;
+	display:flex;
+	flex-direction: column;
+	background-color: #ffffff;
+	width:15%;
+	height:150px;
+	min-width:150px;
+	border-radius:10px;
+	border:1px solid #717171;
+	text-align: center;
+	color:#515151;
+	font-weight: bolder;
+	font-size: 20px;
+}
+.counter img{
+	margin:auto;
+	height:50px;
+	width:50px;
+}
+.counter h3{
+	height: 52.8px;
+}
+@media(max-width:600px){
+	.home-image h1{
+		font-size: 20pt;
+	}
+	.location p{
+		font-size: 13pt;
+	}
+}

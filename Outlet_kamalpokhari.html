@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tip Top</title>
+	<!-- Link to website icon -->
+	<link rel="icon" href="./Pictures/Logo.png">
+	<!-- Link to the external css file -->
+	<link rel="stylesheet" href="./CSS/stylewireframe.css">
+	<link rel="stylesheet" href="./CSS/outlet.css">
+
+
+	<!-- Link to our javascript file-->
+	<script src="./JavaScript/header-footer.js"></script>	
+</head>
+<body>
+	<!-- Header section of the website -->
+	<website-header></website-header>
+	<div style="font-weight: 900;" class="home-image">
+		
+	<h1> Kamal Pokhari Outlet</h1>
+	<div class="location">
+		<img src="./Pictures/location.png" alt="">
+		<p>Kamal Pokhari, Kathmandu 44600</p>
+	</div>
+	<img src="./Pictures/kamalpokhari.jpg">
+	</div>
+	<div class="outlet-image">
+		<img src="">
+	</div>
+	<div class="counter-container">
+		<div class="counter">
+			<img src="./Pictures/experience.png">
+			<span class="num" data-val="35">0</span>
+			<h3>YEARS OF EXPERIENCE</h3>
+		</div>
+		<div class="counter">
+			<img src="./Pictures/staffs.png">
+			<span class="num" data-val="100">0</span>
+			<h3>STAFFS</h3>
+		</div>
+		<div class="counter">
+			<img src="./Pictures/snacks.png">
+			<span class="num" data-val="6">0</span>
+			<h3>OUTLETS</h3>
+		</div>
+		<div class="counter">
+			<img src="./Pictures/customer.png">
+			<div>
+			<span class="num" data-val="10">0</span>k+
+			</div>
+			<h3>Happy Customers</h3>
+		</div>
+	</div>
+	<div class="form-container">
+		<form id="reservation-form">
+			<p class="watermark">Book A Table</p>
+			<p class="form-heading">Make Reservation</p>
+			<div class="form-group">
+				<div class="form-item">
+					<label for="">Name</label>
+					<input type="text" id="book_name" placeholder="Your Name">
+				</div>
+				<div class="form-item">
+					<label for="">Email</label>
+					<input type="email" id="book_email" placeholder="Your Email">
+				</div>
+				<div class="form-item">
+					<label for="">Phone</label>
+					<input type="number" id="book_phone" placeholder="Phone">
+				</div>
+				<div class="form-item">
+					<label for="">date</label>
+					<input type="date"  id="book_date" placeholder="Date">
+				</div>
+				<div class="form-item">
+					<label for="">Time</label>
+					<input type="time" id="book_time" placeholder="Time" autocomplete="off">
+				</div>
+				<div class="form-item">
+					<label for="">Person</label>
+					<select name="" id="book_select" class="selection">
+						<option value="Person">Person</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4+">4+</option>
+					</select>
+				</div>
+			</div>
+			<div class="form-submit">
+				<input type="submit" value="Make a Reservation">
+			</div>
+		</form>
+		<div class="find-us">
+
+			<p>
+				Find Us Here:
+			</p>		
+			<iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56515.82557630887!2d85.28584109467391!3d27.709903073563765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb197d66039c29%3A0x4b3c56a218561a70!2sTip%20Top%20sweets%20kamalpokhari!5e0!3m2!1sen!2snp!4v1691610398982!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>	
+	</div>
+	<div class="visit">
+		!! Visit NOW !!
+	</div>
+
+	<!-- Footer section of the website -->
+	<website-footer></website-footer>
+
+	<!-- link to javascript -->
+	<script type="text/javascript" src="./JavaScript/counter.js"></script>
+	<script type="text/javascript" src="./JavaScript/reservation.js"></script>
+	<script src="./JavaScript/hamburger-menu.js"></script>
+
+</body>
+</html>

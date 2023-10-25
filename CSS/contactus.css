@@ -1,0 +1,141 @@
+		.body{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    }
+    .container{
+		    height: 435px;
+		    width: 550px;
+		    margin: 50px;
+  border-radius: 5px;
+		    background-color: white;
+		}
+		.contact-form {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.contact-form label {
+  color: black;
+}
+
+.contact-form .heading {
+  font-size: 24px;
+  color: black;
+  ;
+  margin-bottom: 12px;
+  font-weight: bold;
+  display: block;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 10px;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+  width: 490px;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px #ff6384;
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.contact-form button[type="submit"] {
+  background-color: #ff6384;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form button[type="submit"]:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styled-table thead tr {
+    background-color: #111111;
+    color: #ffffff;
+    text-align: center;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+    background-color: #f3f3f3;
+    text-align: center;
+}
+
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #111111;
+}
+.extra_information>p{
+    margin-top: 50px;
+    font-size: 22pt;
+  font-weight:bold;
+}
+@media(max-width:550px){
+  .contact-form{
+    width:100%;
+  }
+  label,input,textarea,button{
+    width:80%;
+  }
+}
+.box-container{
+  margin:40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width:100%;
+}
+.box{
+  margin:30px;
+  display: flex;
+  flex-direction: row;
+}
+.icon{
+  height:60px;
+  width:60px;
+}
+.box .text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+  font-size: larger;
+}
